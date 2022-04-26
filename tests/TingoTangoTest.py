@@ -25,3 +25,12 @@ class TingoTangoPrueba(unittest.TestCase):
             self.resultadoActual = self.TT.textoTingoTango(self.numero)
         # Assert
             self.assertEqual(self.resultadoEsperado,self.resultadoActual)
+
+    def test_tingoTango_multiploQuince_retornaTingoTango(self):
+        # Arrange
+            self.numero = 15
+            self.resultadoEsperado = "TingoTango"
+        # Do
+            self.resultadoActual = self.TT.textoTingoTango(self.numero)
+        # Assert
+            self.assertEqual(self.resultadoEsperado,self.resultadoActual)
